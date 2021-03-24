@@ -31,10 +31,10 @@ app.listen(8000, () => {
   console.log("App is listening at port 8000");
 });
 
-// app.get("/", (req, res) => {
-//   console.log("in hi");
-//   res.send("hi");
-// });
+app.get("/", (req, res) => {
+  console.log("in hi");
+  res.send("hi");
+});
 
 app.post("/addlink", async (req, res) => {
   var longURL = req.body.longURL;
