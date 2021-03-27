@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 
 var corsOptions = {
-  origin: ["http://localhost:8000"],
+  origin: ["https://karthik4423.github.io/weeny/", "https://www.weeny.ml"],
 };
 app.use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*");
